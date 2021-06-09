@@ -1,0 +1,19 @@
+{
+    "extends": "@tsconfig/node14/tsconfig.json",
+    "compilerOptions": {
+        "sourceMap": true,
+        "rootDir": ".",
+        "resolveJsonModule": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "baseUrl": ".",
+        "outDir": "dist",
+        "typeRoots": [ "./node_modules/@types", "./src/@types" ]
+    },
+    "exclude": [
+        "node_modules"
+    ],
+    "ts-node": {
+        "files": true
+    }
+}
